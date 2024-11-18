@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: v0s4nuzyx-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: v0s4nuzyx-go 
+  name: v0s4nuzyx-go
+spec:
+  port:
+    targetPort: 8081 
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: v0s4nuzyx-go
+    weight: 100 

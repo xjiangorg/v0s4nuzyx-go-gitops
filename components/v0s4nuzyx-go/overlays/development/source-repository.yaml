@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: v0s4nuzyx-go-repository
+spec:
+  url: https://github.com/xjiangorg/v0s4nuzyx-go
